@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Účto v kapse – účetnictví pro živnostníky (OSVČ)</title>
-  <meta name="description" content="Účto v kapse – účetnictví a daně pro živnostníky (OSVČ). Od dokladů po přiznání, včetně DPH a hlášení.">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Účto v kapse – Paper Play</title>
+  <meta name="description" content="Účto v kapse – účetnictví a daně pro OSVČ. Hravý styl Paper Play se sticky notes a papírovou texturou.">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/logo.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="paper-bg">
   <a class="skip" href="#content">Přeskočit na obsah</a>
   <header class="site-header" id="top">
     <div class="container header-inner">
@@ -20,19 +20,24 @@
       <nav class="main-nav" aria-label="Hlavní navigace">
         <a href="#sluzby">Služby</a>
         <a href="#proc">Proč my</a>
-        <a href="#proces">Jak to funguje</a>
+        <a href="#proces">Jak to probíhá</a>
         <a href="#blog">Tipy</a>
-        <a href="#kontakt" class="btn btn--small btn--primary">Konzultace zdarma</a>
+        <a href="#kontakt" class="btn btn--primary btn--small">Konzultace zdarma</a>
       </nav>
     </div>
   </header>
 
   <main id="content">
+    <!-- HERO -->
     <section class="section hero">
-      <div class="container">
-        <div class="hero-bubble">DPH? Vysvětlíme.</div>
-        <h1>Účto v kapse – účetnictví a daně pro živnostníky (OSVČ) <span class="marker">bez stresu</span></h1>
-        <p class="lead">Od prvního dokladu po daňové přiznání — srozumitelně, online a včas. Navíc s tipy, které znáte z našich sociálních sítí.</p>
+      <div class="container hero-wrap">
+        <div class="sticky big">
+          <div class="tape tape--tl"></div>
+          <div class="tape tape--tr"></div>
+          <h1 class="hero-title">Účto v kapse</h1>
+          <p class="hero-sub">účetnictví a daně pro živnostníky (OSVČ) <span class="marker em-hand">bez stresu</span></p>
+        </div>
+        <p class="lead">Od prvního dokladu po přiznání – srozumitelně, online a včas. Styl jako na vašich sociálních sítích: sticky notes, izolepa a přehlednost.</p>
         <p class="cta-row">
           <a class="btn btn--primary" href="#kontakt">Chci mít účetnictví v kapse</a>
           <a class="btn btn--ghost" href="#kontakt">Domluvit konzultaci</a>
@@ -40,42 +45,32 @@
       </div>
     </section>
 
-    <section id="sluzby" class="section section--paper">
+    <!-- SLUŽBY -->
+    <section id="sluzby" class="section">
       <div class="container">
-        <h2>Co pro vás uděláme</h2>
+        <h2>Služby</h2>
         <div class="grid grid--4">
-          <article class="card note"><div class="icon">📁</div><h3>Vedení účetnictví</h3><p>Kompletní zpracování dokladů, reporting a příprava přiznání.</p></article>
-          <article class="card note"><div class="icon">📒</div><h3>Daňová evidence</h3><p>Přehledné vedení příjmů a výdajů pro OSVČ.</p></article>
-          <article class="card note"><div class="icon">%️</div><h3>DPH & přiznání</h3><p>DPH, kontrolní & souhrnné hlášení, registrace k DPH.</p></article>
-          <article class="card note"><div class="icon">🧭</div><h3>Poradenství</h3><p>Konzultace, kontrola dokladů a nastavení procesů.</p></article>
+          <article class="card note"><h3>Vedení účetnictví</h3><p>Kompletní zpracování dokladů, reporting a příprava přiznání.</p></article>
+          <article class="card note"><h3>Daňová evidence</h3><p>Přehledné vedení příjmů a výdajů pro OSVČ.</p></article>
+          <article class="card note"><h3>DPH & přiznání</h3><p>DPH, kontrolní a souhrnné hlášení, registrace.</p></article>
+          <article class="card note"><h3>Poradenství</h3><p>Konzultace, kontrola dokladů a nastavení procesů.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="proc" class="section section--green">
-      <div class="container green-grid">
-        <div>
-          <h2>Proč Účto v kapse</h2>
-          <div class="mini card"><strong>Rychlost a pořádek</strong><br/>Doklady online, kontrola chyb.</div>
-          <div class="mini card"><strong>Úspora času a nákladů</strong><br/>Jasný přehled, méně papírů.</div>
-          <div class="mini card"><strong>Bezpečí a jistota</strong><br/>Termíny hlídáme za vás.</div>
-        </div>
-        <div class="illus" aria-hidden="true"></div>
+    <!-- PROČ MY -->
+    <section id="proc" class="section section--cream">
+      <div class="container grid grid--3">
+        <div class="sticky"><div class="tape tape--tl"></div><h3>Rychlost</h3><p>Doklady online, průběžná kontrola chyb.</p></div>
+        <div class="sticky"><div class="tape tape--tr"></div><h3>Úspora</h3><p>Méně papírů, jasný přehled a doporučení.</p></div>
+        <div class="sticky"><div class="tape tape--tl"></div><h3>Jistota</h3><p>Hlídáme termíny podání a ozveme se včas.</p></div>
       </div>
     </section>
 
-    <section class="section stats">
-      <div class="container grid grid--4">
-        <div class="stat"><span class="stat__num">120+</span><span class="stat__label">spokojených OSVČ</span></div>
-        <div class="stat"><span class="stat__num">8 let</span><span class="stat__label">praxe</span></div>
-        <div class="stat"><span class="stat__num">48 h</span><span class="stat__label">SLA odpovědi</span></div>
-        <div class="stat"><span class="stat__num">100 %</span><span class="stat__label">termínů včas</span></div>
-      </div>
-    </section>
-
-    <section id="proces" class="section section--paper">
+    <!-- TIMELINE -->
+    <section id="proces" class="section">
       <div class="container">
-        <h2>Jak to funguje</h2>
+        <h2>Jak to probíhá</h2>
         <ol class="timeline">
           <li class="step"><span class="step__num">1</span><strong>Kontakt</strong><p>Napište, zavolejte nebo vyplňte formulář.</p></li>
           <li class="step"><span class="step__num">2</span><strong>Konzultace</strong><p>Krátce zmapujeme potřeby a objem.</p></li>
@@ -85,25 +80,28 @@
       </div>
     </section>
 
-    <section id="blog" class="section">
+    <!-- BLOG/TIPY -->
+    <section id="blog" class="section section--cream">
       <div class="container">
-        <h2>Články a tipy</h2>
+        <h2>Tipy a <span class="em-hand">návody</span></h2>
         <div class="grid grid--3">
-          <article class="card post"><h3>Jak si vyplatit peníze z vlastní firmy</h3><p>Možnosti a daňové dopady, přehledně a s příklady.</p><a class="link" href="#">Číst →</a></article>
-          <article class="card post"><h3>Nadměrný odpočet DPH</h3><p>Kdy vzniká a co si pohlídat při uplatnění nároku.</p><a class="link" href="#">Číst →</a></article>
-          <article class="card post"><h3>Co potřebujeme k DPH znát</h3><p>Limity, registrace, souhrnné a kontrolní hlášení.</p><a class="link" href="#">Číst →</a></article>
+          <article class="card note"><h3>Jak si vyplatit peníze z firmy</h3><p>Možnosti a jejich dopady.</p><a class="link" href="#">Číst →</a></article>
+          <article class="card note"><h3>DPH: kdy a co hlídat</h3><p>Limity, registrace, hlášení.</p><a class="link" href="#">Číst →</a></article>
+          <article class="card note"><h3>Daňová evidence</h3><p>Příjmy × výdaje, kdo ji vede.</p><a class="link" href="#">Číst →</a></article>
         </div>
       </div>
     </section>
 
+    <!-- CTA -->
     <section class="section cta">
       <div class="container cta__inner">
         <h2>Je čas mít účetnictví v kapse</h2>
-        <a class="btn btn--primary" href="#kontakt">Chci začít</a>
+        <a class="btn btn--primary" href="#kontakt">Začít</a>
       </div>
     </section>
 
-    <section id="kontakt" class="section section--paper">
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section">
       <div class="container">
         <h2>Kontakt</h2>
         <form class="contact" action="#" method="post" onsubmit="return false;">
