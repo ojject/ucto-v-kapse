@@ -1,20 +1,21 @@
 <!doctype html>
 <html lang="cs">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Účto v kapse – Paper Play</title>
-  <meta name="description" content="Účto v kapse – účetnictví a daně pro OSVČ. Hravý styl Paper Play se sticky notes a papírovou texturou.">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Účto v kapse — Paper Play</title>
+  <meta name="description" content="Účto v kapse — účetnictví a daně pro živnostníky (OSVČ). Hravý Paper Play styl: sticky notes, izolepa, papírová textura a ilustrace.">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/logo.png" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/logo_uvk.svg"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body class="paper-bg">
   <a class="skip" href="#content">Přeskočit na obsah</a>
+  <!-- Header (single nav) -->
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Účto v kapse – domů">
-        <img src="assets/logo.png" alt="UVK" width="40" height="40"/>
+      <a class="brand" href="#top" aria-label="Účto v kapse — domů">
+        <img src="assets/logo_uvk.svg" alt="UVK" width="36" height="36"/>
         <span>Účto v kapse</span>
       </a>
       <nav class="main-nav" aria-label="Hlavní navigace">
@@ -30,64 +31,92 @@
   <main id="content">
     <!-- HERO -->
     <section class="section hero">
-      <div class="container hero-wrap">
+      <div class="container hero-grid">
+        <!-- Left sticky card with mascot -->
         <div class="sticky big">
           <div class="tape tape--tl"></div>
           <div class="tape tape--tr"></div>
-          <h1 class="hero-title">Účto v kapse</h1>
-          <p class="hero-sub">účetnictví a daně pro živnostníky (OSVČ) <span class="marker em-hand">bez stresu</span></p>
+          <img class="brain" src="assets/brain.svg" alt="Maskot mozek se žárovkou"/>
+          <h1 class="hero-logo">Účto v kapse</h1>
         </div>
-        <p class="lead">Od prvního dokladu po přiznání – srozumitelně, online a včas. Styl jako na vašich sociálních sítích: sticky notes, izolepa a přehlednost.</p>
-        <p class="cta-row">
-          <a class="btn btn--primary" href="#kontakt">Chci mít účetnictví v kapse</a>
-          <a class="btn btn--ghost" href="#kontakt">Domluvit konzultaci</a>
-        </p>
+        <!-- Right heading & CTA -->
+        <div>
+          <h1 class="hero-title">Účto v kapse — účetnictví a daně pro živnostníky (OSVČ)</h1>
+          <p class="hero-sub em-hand marker">bez stresu</p>
+          <p class="lead">Od prvního dokladu po přiznání — srozumitelně, online a včas. Styl jako na vašich sociálních sítích: sticky notes, izolepa a přehlednost.</p>
+          <p class="cta-row">
+            <a class="btn btn--primary" href="#kontakt">Chci mít účetnictví v kapse</a>
+            <a class="btn btn--ghost" href="#kontakt">Domluvit konzultaci</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Service cards row (as in mockup) -->
+      <div class="container services">
+        <div class="svc card note">
+          <img src="assets/icon-folder.svg" alt="Ikona složky" width="32" height="32"/>
+          <div>
+            <h3>Účetnictví</h3>
+            <p>Vedení účetnictví a daňové evidence.</p>
+          </div>
+        </div>
+        <div class="svc card note">
+          <img src="assets/icon-receipt.svg" alt="Ikona dokladu" width="32" height="32"/>
+          <div>
+            <h3>Daňová přiznání</h3>
+            <p>Přiznání k DPH, silniční daně aj.</p>
+          </div>
+        </div>
+        <div class="svc card note">
+          <img src="assets/icon-chat.svg" alt="Ikona poradenství" width="32" height="32"/>
+          <div>
+            <h3>Daňové poradenství</h3>
+            <p>Optimalizace a konzultace.</p>
+          </div>
+        </div>
+        <div class="svc card note">
+          <img src="assets/icon-shield.svg" alt="Ikona štítu" width="32" height="32"/>
+          <div>
+            <h3>Paušální daň</h3>
+            <p>Přihlášení k paušální dani pro OSVČ.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- SLUŽBY -->
-    <section id="sluzby" class="section">
-      <div class="container">
-        <h2>Služby</h2>
-        <div class="grid grid--4">
-          <article class="card note"><h3>Vedení účetnictví</h3><p>Kompletní zpracování dokladů, reporting a příprava přiznání.</p></article>
-          <article class="card note"><h3>Daňová evidence</h3><p>Přehledné vedení příjmů a výdajů pro OSVČ.</p></article>
-          <article class="card note"><h3>DPH & přiznání</h3><p>DPH, kontrolní a souhrnné hlášení, registrace.</p></article>
-          <article class="card note"><h3>Poradenství</h3><p>Konzultace, kontrola dokladů a nastavení procesů.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROČ MY -->
+    <!-- WHY US -->
     <section id="proc" class="section section--cream">
-      <div class="container grid grid--3">
-        <div class="sticky"><div class="tape tape--tl"></div><h3>Rychlost</h3><p>Doklady online, průběžná kontrola chyb.</p></div>
-        <div class="sticky"><div class="tape tape--tr"></div><h3>Úspora</h3><p>Méně papírů, jasný přehled a doporučení.</p></div>
-        <div class="sticky"><div class="tape tape--tl"></div><h3>Jistota</h3><p>Hlídáme termíny podání a ozveme se včas.</p></div>
+      <div class="container">
+        <h2>Proč si vybrat nás</h2>
+        <div class="grid grid--3 why">
+          <div class="sticky"><div class="tape tape--tl"></div><h3>Kontakt</h3><p>Napíšte, nebojte se — ozveme se rychle.</p></div>
+          <div class="sticky"><div class="tape tape--tr"></div><h3>Konzultace</h3><p>Zdarma, sdílíme zkušenosti a doporučení.</p></div>
+          <div class="sticky"><div class="tape tape--tl"></div><h3>Doklady</h3><p>Přebíráme, třídíme a včas podáváme.</p></div>
+        </div>
       </div>
     </section>
 
-    <!-- TIMELINE -->
+    <!-- PROCESS -->
     <section id="proces" class="section">
       <div class="container">
         <h2>Jak to probíhá</h2>
         <ol class="timeline">
           <li class="step"><span class="step__num">1</span><strong>Kontakt</strong><p>Napište, zavolejte nebo vyplňte formulář.</p></li>
-          <li class="step"><span class="step__num">2</span><strong>Konzultace</strong><p>Krátce zmapujeme potřeby a objem.</p></li>
+          <li class="step"><span class="step__num">2</span><strong>Konzultace</strong><p>Krátce zmapujeme potřeby a objem agendy.</p></li>
           <li class="step"><span class="step__num">3</span><strong>Doklady</strong><p>Předání online (Drive/Datovka) nebo fyzicky.</p></li>
-          <li class="step"><span class="step__num">4</span><strong>Zpracování</strong><p>Reporting + včasná podání přiznání.</p></li>
+          <li class="step"><span class="step__num">4</span><strong>Zpracování</strong><p>Reporting + včasná podání přiznání a hlášení.</p></li>
         </ol>
       </div>
     </section>
 
-    <!-- BLOG/TIPY -->
+    <!-- TIPS -->
     <section id="blog" class="section section--cream">
       <div class="container">
         <h2>Tipy a <span class="em-hand">návody</span></h2>
         <div class="grid grid--3">
-          <article class="card note"><h3>Jak si vyplatit peníze z firmy</h3><p>Možnosti a jejich dopady.</p><a class="link" href="#">Číst →</a></article>
-          <article class="card note"><h3>DPH: kdy a co hlídat</h3><p>Limity, registrace, hlášení.</p><a class="link" href="#">Číst →</a></article>
-          <article class="card note"><h3>Daňová evidence</h3><p>Příjmy × výdaje, kdo ji vede.</p><a class="link" href="#">Číst →</a></article>
+          <article class="card note"><h3>Jak si vyplatit peníze z firmy</h3><p>Možnosti a jejich dopady — přehledně a s příklady.</p><a class="link" href="#">Číst →</a></article>
+          <article class="card note"><h3>DPH: kdy a co hlídat</h3><p>Limity, registrace, kontrolní a souhrnné hlášení.</p><a class="link" href="#">Číst →</a></article>
+          <article class="card note"><h3>Daňová evidence</h3><p>Příjmy × výdaje, kdo ji vede, praktické tipy pro OSVČ.</p><a class="link" href="#">Číst →</a></article>
         </div>
       </div>
     </section>
@@ -100,13 +129,13 @@
       </div>
     </section>
 
-    <!-- KONTAKT -->
+    <!-- CONTACT -->
     <section id="kontakt" class="section">
       <div class="container">
         <h2>Kontakt</h2>
         <form class="contact" action="#" method="post" onsubmit="return false;">
-          <label>Jméno<input required type="text" name="name" placeholder="Vaše jméno"></label>
-          <label>E‑mail<input required type="email" name="email" placeholder="vas@email.cz"></label>
+          <label>Jméno<input required type="text" name="name" placeholder="Vaše jméno"/></label>
+          <label>E‑mail<input required type="email" name="email" placeholder="vas@email.cz"/></label>
           <label>Zpráva<textarea required name="msg" rows="4" placeholder="S čím vám můžeme pomoci?"></textarea></label>
           <button class="btn btn--primary" type="submit">Odeslat</button>
           <p class="form-ok" role="status" aria-live="polite" hidden>Děkujeme! Ozveme se co nejdřív.</p>
@@ -117,7 +146,7 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="brand brand--footer"><img src="assets/logo.png" width="36" height="36" alt=""/><span>Účto v kapse</span></div>
+      <div class="brand brand--footer"><img src="assets/logo_uvk.svg" width="32" height="32" alt=""/><span>Účto v kapse</span></div>
       <div>
         <h4>Odkazy</h4>
         <ul>

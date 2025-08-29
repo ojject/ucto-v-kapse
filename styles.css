@@ -1,4 +1,4 @@
-/* Paper Play theme */
+/* Paper Play full theme */
 :root{
   --ink:#352E2C; --gray:#6B625E; --cream:#FFF2D8; --paper:#F6EFE7; --white:#FFFFFF;
   --mint:#41C48F; --yellow:#FFC94B; --peach:#FFC8A2; --sky:#B7D6EF;
@@ -27,16 +27,16 @@ h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
 .lead{color:var(--gray);max-width:720px}
 .marker{background:linear-gradient(180deg,transparent 60%, var(--yellow) 60%);padding:0 .2em}
 
-/* Paper background subtleties */
-.paper-bg{background-image: radial-gradient(800px 400px at 10% -10%, #FFF9EF 20%, transparent 60%),
-                              radial-gradient(600px 300px at 90% 0%, #FFF7EA 20%, transparent 60%);
-}
+/* Paper background subtle doodles */
+.paper-bg{background-image:url('assets/doodles.svg'), radial-gradient(800px 400px at 10% -10%, #FFF9EF 20%, transparent 60%), radial-gradient(600px 300px at 90% 0%, #FFF7EA 20%, transparent 60%); background-repeat: repeat, no-repeat, no-repeat}
 
 /* Hero */
-.hero-wrap{display:grid;gap:16px}
-.hero .sticky.big{max-width:520px}
-.hero-title{font-size:clamp(40px,5.5vw,64px)}
-.hero-sub{font-size:clamp(18px,2.2vw,24px);margin-top:4px}
+.hero-grid{display:grid;grid-template-columns:1.1fr 1.2fr;gap:28px;align-items:center}
+.hero .sticky.big{max-width:540px}
+.hero-logo{font-size:clamp(32px,4.4vw,56px); margin-top:12px}
+.hero-title{font-size:clamp(28px,3.6vw,44px)}
+.hero-sub{font-size:clamp(18px,2.2vw,26px);margin:6px 0 12px}
+.brain{width:240px; height:auto; margin:8px auto 0}
 
 /* Sticky notes */
 .sticky{position:relative;background:var(--cream);border-radius:var(--radius-sticky);padding:20px 22px;box-shadow:0 4px 0 rgba(0,0,0,.16), var(--shadow-soft)}
@@ -44,16 +44,17 @@ h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
 .tape--tl{left:18px;transform:rotate(-7deg)}
 .tape--tr{right:18px;transform:rotate(7deg)}
 
-/* Cards */
-.card{background:#fff;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-soft)}
-.card.note{background:var(--cream);box-shadow:0 4px 0 rgba(0,0,0,.15), var(--shadow-soft)}
-
 /* Buttons */
 .btn{display:inline-block;padding:14px 22px;border-radius:999px;font-weight:800;text-decoration:none;transition:.2s}
 .btn--small{padding:10px 16px}
 .btn--primary{background:var(--mint);color:#fff}
 .btn--ghost{background:#fff;border:2px solid var(--ink);color:var(--ink)}
 .btn:hover{transform:translateY(-1px) scale(1.01)}
+
+/* Services row */
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}
+.svc{display:flex;gap:14px;align-items:flex-start}
+.svc h3{margin:0 0 4px}
 
 /* Sections */
 .section{padding:72px 0}
@@ -86,5 +87,5 @@ h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
 .copy{border-top:1px solid rgba(255,255,255,.1);padding:14px 0;text-align:center;margin-top:12px}
 
 /* Responsive */
-@media(max-width:1024px){.grid--4{grid-template-columns:repeat(2,1fr)}.grid--3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:1080px){.services{grid-template-columns:repeat(2,1fr)} .hero-grid{grid-template-columns:1fr}}
 @media(max-width:640px){.grid--4,.grid--3{grid-template-columns:1fr}.main-nav{gap:12px}}
