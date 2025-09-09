@@ -1,12 +1,15 @@
-/* Paper Play full theme */
+/* Paper Play – Varianta B: Rubik / Signika / Caveat */
 :root{
   --ink:#352E2C; --gray:#6B625E; --cream:#FFF2D8; --paper:#F6EFE7; --white:#FFFFFF;
   --mint:#41C48F; --yellow:#FFC94B; --peach:#FFC8A2; --sky:#B7D6EF;
   --radius:16px; --radius-sticky:12px; --shadow-soft:0 10px 24px rgba(0,0,0,.07);
+  --font-heading:"Rubik",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --font-text:"Signika",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --font-hand:"Caveat","Patrick Hand",cursive;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;color:var(--ink);font:16px/1.7 "Nunito",system-ui;background:var(--paper)}
+body{margin:0;color:var(--ink);font:16px/1.7 var(--font-text);background:var(--paper)}
 img{max-width:100%;display:block}
 .container{max-width:1200px;margin:auto;padding:0 24px}
 .skip{position:absolute;left:-9999px}
@@ -15,19 +18,19 @@ img{max-width:100%;display:block}
 /* Header */
 .site-header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #E8E0D8;z-index:5}
 .header-inner{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:12px}
-.brand{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:800;text-decoration:none;font-family:"Fredoka"}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);font:700 20px/1 var(--font-heading);text-decoration:none}
 .main-nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-.main-nav a{color:var(--ink);text-decoration:none;font-weight:700}
+.main-nav a{color:var(--ink);text-decoration:none;font-weight:700;font-family:var(--font-heading)}
 
-/* Typography */
-h1,h2,h3,h4{font-family:"Fredoka",system-ui;color:var(--ink);letter-spacing:.2px;margin:0 0 12px}
+/* Type */
+h1,h2,h3,h4{font-family:var(--font-heading);color:var(--ink);letter-spacing:.2px;margin:0 0 12px}
 h1{font-weight:700;font-size:clamp(30px,4.5vw,52px)}
 h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
-.em-hand{font-family:"Caveat",cursive;font-weight:700}
+.em-hand{font-family:var(--font-hand);font-weight:700}
 .lead{color:var(--gray);max-width:720px}
 .marker{background:linear-gradient(180deg,transparent 60%, var(--yellow) 60%);padding:0 .2em}
 
-/* Paper background subtle doodles */
+/* Paper doodles */
 .paper-bg{background-image:url('assets/doodles.svg'), radial-gradient(800px 400px at 10% -10%, #FFF9EF 20%, transparent 60%), radial-gradient(600px 300px at 90% 0%, #FFF7EA 20%, transparent 60%); background-repeat: repeat, no-repeat, no-repeat}
 
 /* Hero */
@@ -51,7 +54,7 @@ h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
 .btn--ghost{background:#fff;border:2px solid var(--ink);color:var(--ink)}
 .btn:hover{transform:translateY(-1px) scale(1.01)}
 
-/* Services row */
+/* Services */
 .services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}
 .svc{display:flex;gap:14px;align-items:flex-start}
 .svc h3{margin:0 0 4px}
@@ -72,7 +75,7 @@ h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
 
 /* CTA */
 .cta{background:#0F2744;color:#fff;text-align:center}
-.cta h2{color:#fff;margin-bottom:12px;font-family:"Fredoka"}
+.cta h2{color:#fff;margin-bottom:12px;font-family:var(--font-heading)}
 
 /* Contact */
 .contact{display:grid;gap:12px;max-width:640px}
@@ -83,7 +86,7 @@ h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
 /* Footer */
 .site-footer{background:#0F2744;color:#D8E2EF}
 .footer-grid{display:grid;gap:24px;grid-template-columns:2fr 1fr 1fr}
-.brand--footer{display:flex;align-items:center;gap:10px;font-weight:800;color:#fff}
+.brand--footer{display:flex;align-items:center;gap:10px;font:800 18px/1 var(--font-heading);color:#fff}
 .copy{border-top:1px solid rgba(255,255,255,.1);padding:14px 0;text-align:center;margin-top:12px}
 
 /* Responsive */

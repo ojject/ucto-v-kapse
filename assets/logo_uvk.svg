@@ -2,5 +2,5 @@
   <rect x="6" y="10" width="60" height="52" rx="8" fill="#B7D6EF" stroke="#163E6C" stroke-width="2"/>
   <path d="M36 12l10 14-4 30H30l-4-30 10-14z" fill="#163E6C"/>
   <rect x="48" y="28" width="12" height="12" rx="2" fill="#E6F0FA" stroke="#163E6C"/>
-  <text x="12" y="26" font-family="Fredoka,Montserrat,Arial" font-weight="800" font-size="10" fill="#163E6C">UVK</text>
+  <text x="12" y="26" font-family="Rubik,Montserrat,Arial" font-weight="800" font-size="10" fill="#163E6C">UVK</text>
 </svg>
