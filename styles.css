@@ -1,4 +1,4 @@
-/* Paper Play – Varianta B: Rubik / Signika / Caveat */
+/* Paper Play – Prezentace */
 :root{
   --ink:#352E2C; --gray:#6B625E; --cream:#FFF2D8; --paper:#F6EFE7; --white:#FFFFFF;
   --mint:#41C48F; --yellow:#FFC94B; --peach:#FFC8A2; --sky:#B7D6EF;
@@ -15,31 +15,37 @@ img{max-width:100%;display:block}
 .skip{position:absolute;left:-9999px}
 .skip:focus{left:12px;top:12px;background:#000;color:#fff;padding:8px 12px;z-index:10}
 
-/* Header */
 .site-header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #E8E0D8;z-index:5}
 .header-inner{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:12px}
 .brand{display:flex;align-items:center;gap:10px;color:var(--ink);font:700 20px/1 var(--font-heading);text-decoration:none}
 .main-nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .main-nav a{color:var(--ink);text-decoration:none;font-weight:700;font-family:var(--font-heading)}
+.btn{display:inline-block;padding:14px 22px;border-radius:999px;font-weight:800;text-decoration:none;transition:.2s}
+.btn--small{padding:10px 16px}
+.btn--primary{background:var(--mint);color:#fff}
+.btn--ghost{background:#fff;border:2px solid var(--ink);color:var(--ink)}
+.btn:hover{transform:translateY(-1px) scale(1.01)}
 
-/* Type */
+.section{padding:80px 0}
+.section--cream{background:#FBF2E4}
+.section--paper{background:#F8F5EE}
+
 h1,h2,h3,h4{font-family:var(--font-heading);color:var(--ink);letter-spacing:.2px;margin:0 0 12px}
 h1{font-weight:700;font-size:clamp(30px,4.5vw,52px)}
 h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
 .em-hand{font-family:var(--font-hand);font-weight:700}
-.lead{color:var(--gray);max-width:720px}
+.lead{color:var(--gray);max-width:760px}
 .marker{background:linear-gradient(180deg,transparent 60%, var(--yellow) 60%);padding:0 .2em}
 
-/* Paper doodles */
 .paper-bg{background-image:url('assets/doodles.svg'), radial-gradient(800px 400px at 10% -10%, #FFF9EF 20%, transparent 60%), radial-gradient(600px 300px at 90% 0%, #FFF7EA 20%, transparent 60%); background-repeat: repeat, no-repeat, no-repeat}
 
-/* Hero */
 .hero-grid{display:grid;grid-template-columns:1.1fr 1.2fr;gap:28px;align-items:center}
 .hero .sticky.big{max-width:540px}
 .hero-logo{font-size:clamp(32px,4.4vw,56px); margin-top:12px}
 .hero-title{font-size:clamp(28px,3.6vw,44px)}
 .hero-sub{font-size:clamp(18px,2.2vw,26px);margin:6px 0 12px}
 .brain{width:240px; height:auto; margin:8px auto 0}
+.clients img{opacity:.9; filter:saturate(.9)}
 
 /* Sticky notes */
 .sticky{position:relative;background:var(--cream);border-radius:var(--radius-sticky);padding:20px 22px;box-shadow:0 4px 0 rgba(0,0,0,.16), var(--shadow-soft)}
@@ -47,35 +53,35 @@ h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
 .tape--tl{left:18px;transform:rotate(-7deg)}
 .tape--tr{right:18px;transform:rotate(7deg)}
 
-/* Buttons */
-.btn{display:inline-block;padding:14px 22px;border-radius:999px;font-weight:800;text-decoration:none;transition:.2s}
-.btn--small{padding:10px 16px}
-.btn--primary{background:var(--mint);color:#fff}
-.btn--ghost{background:#fff;border:2px solid var(--ink);color:var(--ink)}
-.btn:hover{transform:translateY(-1px) scale(1.01)}
-
-/* Services */
-.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}
-.svc{display:flex;gap:14px;align-items:flex-start}
-.svc h3{margin:0 0 4px}
-
-/* Sections */
-.section{padding:72px 0}
-.section--cream{background:#FBF2E4}
-
 /* Grid */
 .grid{display:grid;gap:24px}
 .grid--3{grid-template-columns:repeat(3,1fr)}
 .grid--4{grid-template-columns:repeat(4,1fr)}
+
+/* Benefit list */
+.benefit-list{display:grid;gap:12px;grid-template-columns:1fr 1fr;list-style:none;padding:0;margin:20px 0 0}
+.benefit-list li{display:flex;gap:10px;align-items:flex-start;background:#fff;border-radius:14px;padding:12px 14px;box-shadow:var(--shadow-soft)}
 
 /* Timeline */
 .timeline{display:grid;gap:20px;grid-template-columns:repeat(4,1fr);list-style:none;padding:0;margin:24px 0}
 .step{background:#fff;border:1px dashed #E2D9CF;padding:18px;border-radius:16px;position:relative;box-shadow:var(--shadow-soft)}
 .step__num{position:absolute;left:-10px;top:-10px;background:var(--yellow);border-radius:50%;width:30px;height:30px;display:grid;place-items:center;font-weight:800;box-shadow:var(--shadow-soft)}
 
+/* Pricing */
+.pricing .price{position:relative}
+.price__tag{font:800 22px/1 var(--font-heading);margin:8px 0 10px}
+.price--hit{transform:translateY(-4px)}
+.ribbon{position:absolute;top:-10px;right:12px;background:#41C48F;color:#fff;padding:6px 10px;border-radius:10px;font:800 12px/1 var(--font-heading)}
+.small.gray{color:#6b6b6b;margin-top:12px}
+
+/* Testimonials */
+.testimonials figure{padding:20px;border-radius:16px;background:#fff;box-shadow:var(--shadow-soft)}
+.testimonials blockquote{margin:0 0 8px;font-style:italic}
+.testimonials figcaption{color:#6b6b6b}
+
 /* CTA */
 .cta{background:#0F2744;color:#fff;text-align:center}
-.cta h2{color:#fff;margin-bottom:12px;font-family:var(--font-heading)}
+.cta h2{color:#fff;margin-bottom:12px}
 
 /* Contact */
 .contact{display:grid;gap:12px;max-width:640px}
@@ -89,6 +95,14 @@ h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
 .brand--footer{display:flex;align-items:center;gap:10px;font:800 18px/1 var(--font-heading);color:#fff}
 .copy{border-top:1px solid rgba(255,255,255,.1);padding:14px 0;text-align:center;margin-top:12px}
 
+/* Appear animation for presentation */
+[data-animate]{opacity:0;transform:translateY(12px);transition:.5s ease;}
+[data-animate].in{opacity:1;transform:none}
+
+/* Presenter toolbar */
+.presenter-toolbar{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);background:#0F2744;color:#fff;padding:8px 12px;border-radius:999px;display:flex;gap:16px;align-items:center;box-shadow:0 8px 16px rgba(0,0,0,.2);z-index:10}
+.presenter-toolbar button{background:#fff;border:0;color:#0F2744;font-weight:800;border-radius:8px;padding:6px 10px}
+
 /* Responsive */
-@media(max-width:1080px){.services{grid-template-columns:repeat(2,1fr)} .hero-grid{grid-template-columns:1fr}}
+@media(max-width:1080px){.grid--4{grid-template-columns:repeat(2,1fr)}.grid--3{grid-template-columns:repeat(2,1fr)}.benefit-list{grid-template-columns:1fr}}
 @media(max-width:640px){.grid--4,.grid--3{grid-template-columns:1fr}.main-nav{gap:12px}}

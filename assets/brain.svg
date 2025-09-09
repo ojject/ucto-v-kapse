@@ -7,7 +7,6 @@
       <feBlend in2="SourceGraphic" mode="normal"/>
     </filter>
   </defs>
-  <rect width="300" height="220" fill="none"/>
   <g filter="url(#shadow)">
     <path d="M72 140c-20-6-30-22-27-40 2-12 9-20 19-25-1-17 14-31 31-29 6-13 20-20 34-17 6 1 11 4 15 8 12-9 29-7 39 4 4-1 9 0 13 1 17 6 27 23 23 40 10 6 17 17 16 29-2 20-19 36-41 38l-96 8c-11 1-23-6-26-17z" fill="#FFD3D6" stroke="#EAA4AD" stroke-width="4"/>
     <circle cx="115" cy="115" r="6" fill="#2F2F2F"/>

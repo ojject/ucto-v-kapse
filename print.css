@@ -1,0 +1,12 @@
+/* Tisk / PDF pro předání klientovi */
+@page { size: A4; margin: 12mm }
+*{ -webkit-print-color-adjust: exact; print-color-adjust: exact }
+body{ font:12pt/1.5 "Signika", Arial, sans-serif; color:#222 }
+.site-header, .presenter-toolbar, .cta, .copy{ display:none !important }
+.section{ padding:0 0 14pt }
+h1{ font-size:20pt; margin:0 0 6pt }
+h2{ font-size:16pt; margin:10pt 0 6pt }
+p,li{ font-size:11pt }
+.card, .note, .sticky, .benefit-list li{ box-shadow:none; border:1px solid #eee }
+.timeline{ grid-template-columns:1fr 1fr; gap:8pt }
+.grid--3, .grid--4{ grid-template-columns:1fr 1fr }
