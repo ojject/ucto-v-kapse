@@ -1,8 +1,7 @@
-/* Tisk / PDF pro předání klientovi */
 @page { size: A4; margin: 12mm }
 *{ -webkit-print-color-adjust: exact; print-color-adjust: exact }
 body{ font:12pt/1.5 "Signika", Arial, sans-serif; color:#222 }
-.site-header, .presenter-toolbar, .cta, .copy{ display:none !important }
+.site-header, .presenter-toolbar, .cta, .copy, .doodle, .divider{ display:none !important }
 .section{ padding:0 0 14pt }
 h1{ font-size:20pt; margin:0 0 6pt }
 h2{ font-size:16pt; margin:10pt 0 6pt }

@@ -1,5 +1,3 @@
-// Rok v patičce
-const yearEl = document.querySelector('.copy');
 // Form OK
 const form = document.querySelector('.contact');
 if (form){
@@ -18,13 +16,12 @@ const reveal = () => {
 window.addEventListener('scroll', reveal);
 window.addEventListener('load', reveal);
 
-// Presenter mode
+// Presenter mode (optional)
 const params = new URLSearchParams(location.search);
 const presenter = params.get('present');
 const bar = document.getElementById('presenterBar');
-if (presenter === '1'){
+if (bar && presenter === '1'){
   bar.hidden = false;
-  // arrows navigate section by section
   const sections = [...document.querySelectorAll('main .section')];
   let idx = 0;
   const go = (d)=>{ idx = Math.min(Math.max(0, idx + d), sections.length-1); sections[idx].scrollIntoView({behavior:'smooth', block:'start'}); };
