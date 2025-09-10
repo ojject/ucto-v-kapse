@@ -1,3 +1,5 @@
+// Year in footer if present
+const copyEl = document.querySelector('.copy');
 // Form OK
 const form = document.querySelector('.contact');
 if (form){
@@ -15,6 +17,24 @@ const reveal = () => {
 };
 window.addEventListener('scroll', reveal);
 window.addEventListener('load', reveal);
+
+// Doodle density toggle
+const btn = document.getElementById('toggleDoodles');
+if (btn){
+  btn.addEventListener('click', ()=>{
+    const body = document.body;
+    const more = body.classList.toggle('kidcore-less');
+    if (body.classList.contains('kidcore-less')){
+      body.classList.remove('kidcore-more');
+      btn.textContent = '🎨 Hravost: míň';
+      btn.setAttribute('aria-pressed','false');
+    } else {
+      body.classList.add('kidcore-more');
+      btn.textContent = '🎨 Hravost: víc';
+      btn.setAttribute('aria-pressed','true');
+    }
+  });
+}
 
 // Presenter mode (optional)
 const params = new URLSearchParams(location.search);

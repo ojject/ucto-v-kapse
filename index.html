@@ -3,17 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Účto v kapse — Prezentace (více doodles)</title>
-  <meta name="description" content="Účto v kapse: účetnictví, daně a DPH pro OSVČ. Paper Play UI s více doodly, připravené k prezentaci klientovi.">
-  <meta name="theme-color" content="#41C48F">
+  <title>Účto v kapse — Paper Play Kid‑core (více doodles)</title>
+  <meta name="description" content="Účto v kapse: účetnictví, daně, DPH pro OSVČ. Kid‑core Paper Play s víc doodly a rozšířenými informacemi o službách.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Signika:wght@400;600&family=Caveat:wght@700&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Signika:wght@400;600&family=Caveat:wght@700&family=Patrick+Hand:wght@700&display=swap&subset=latin-ext" rel="stylesheet">
   <link rel="icon" href="assets/logo_uvk.svg" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="print.css" media="print" />
 </head>
-<body class="paper-bg">
+<body class="paper-bg kidcore-more">
   <a class="skip" href="#obsah">Přeskočit na obsah</a>
 
   <header class="site-header">
@@ -24,38 +23,39 @@
       </a>
       <nav class="main-nav">
         <a href="#sluzby">Služby</a>
-        <a href="#prinosy">Přínosy</a>
-        <a href="#prubeh">Proces</a>
-        <a href="#cenik">Ceník</a>
-        <a href="#reference">Reference</a>
+        <a href="#balicky">Balíčky</a>
+        <a href="#jak-zacit">Jak začneme</a>
+        <a href="#co-potrebujem">Co potřebujeme</a>
         <a href="#faq">FAQ</a>
         <a href="#kontakt" class="btn btn--primary btn--small">Schůzka zdarma</a>
       </nav>
+      <button id="toggleDoodles" class="toggle-doodles" aria-pressed="true" aria-live="polite" title="Přepnout hravost (víc/míň doodles)">🎨 Hravost: víc</button>
     </div>
   </header>
 
   <main id="obsah">
     <!-- HERO -->
     <section id="top" class="section hero">
-      <img class="doodle doodle--sparkles" src="assets/doodle-sparkles.svg" alt="" aria-hidden="true"/>
-      <img class="doodle doodle--arrow" src="assets/doodle-arrow.svg" alt="" aria-hidden="true"/>
+      <img class="doodle doodle--rainbow" src="assets/doodle-rainbow.svg" alt="" aria-hidden="true"/>
+      <img class="doodle doodle--starfat" src="assets/doodle-star-fat.svg" alt="" aria-hidden="true"/>
       <div class="container hero-grid">
         <div class="sticky big" data-animate>
           <div class="tape tape--tl"></div>
           <div class="tape tape--tr"></div>
           <img class="brain" src="assets/brain.svg" alt="Maskot mozek se žárovkou"/>
           <h1 class="hero-logo">Účto v kapse</h1>
+          <p class="em-hand marker hero-slogan">počítáme, abyste mohli tvořit!</p>
         </div>
         <div>
           <h1 class="hero-title" data-animate>Účetnictví a daně pro živnostníky (OSVČ)</h1>
           <p class="hero-sub em-hand marker" data-animate>bez stresu</p>
           <p class="lead" data-animate>
             Od prvního dokladu po přiznání — srozumitelně, online a včas.
-            Jasné ceny, přehledný reporting a lidská komunikace.
+            Vše ve stylu „sticky notes“, ručních zvýraznění a hravých doodlů.
           </p>
           <p class="cta-row" data-animate>
-            <a class="btn btn--primary" href="#kontakt">Zažádat o schůzku</a>
-            <a class="btn btn--ghost" href="#cenik">Podívat se na ceny</a>
+            <a class="btn btn--primary" href="#kontakt">Chci mít účetnictví v kapse</a>
+            <a class="btn btn--ghost" href="#sluzby">Co přesně děláte?</a>
           </p>
           <div class="clients" data-animate>
             <img src="assets/clients.svg" alt="Loga klientů (placeholder)"/>
@@ -65,173 +65,209 @@
       <img class="divider" src="assets/divider-dash.svg" alt="" aria-hidden="true"/>
     </section>
 
-    <!-- SLUŽBY -->
-    <section id="sluzby" class="section">
-      <img class="doodle doodle--coin" src="assets/doodle-coin.svg" alt="" aria-hidden="true"/>
-      <img class="doodle doodle--star" src="assets/doodle-star.svg" alt="" aria-hidden="true"/>
+    <!-- SLUŽBY (rozšířené) -->
+    <section id="sluzby" class="section section--paper">
+      <img class="doodle doodle--heart" src="assets/doodle-heart.svg" alt="" aria-hidden="true"/>
+      <img class="doodle doodle--smile" src="assets/doodle-smile.svg" alt="" aria-hidden="true"/>
       <div class="container">
-        <h2 data-animate>Co pro vás uděláme</h2>
-        <div class="grid grid--4">
+        <h2 data-animate>Služby — co přesně zajistíme</h2>
+        <div class="grid grid--3 services-grid">
           <article class="card note" data-animate>
-            <h3>Vedení účetnictví</h3>
-            <p>Kompletní zpracování dokladů, účtování, měsíční/čtvrtletní reporty.</p>
+            <h3>1) Vedení účetnictví</h3>
+            <ul>
+              <li>Zaúčtování přijatých a vydaných dokladů</li>
+              <li>Bankovní výpisy, pokladna, interní doklady</li>
+              <li>Reporting: měsíční/čtvrtletní přehledy</li>
+            </ul>
           </article>
           <article class="card note" data-animate>
-            <h3>Daňová evidence</h3>
-            <p>Přehledné vedení příjmů a výdajů pro OSVČ. On‑line předávání dokladů.</p>
+            <h3>2) Daňová evidence (OSVČ)</h3>
+            <ul>
+              <li>Přehled příjmů a výdajů</li>
+              <li>Evidence majetku a odpisy</li>
+              <li>Podklady pro Přehledy na ZP/OSSZ</li>
+            </ul>
           </article>
           <article class="card note" data-animate>
-            <h3>DPH & přiznání</h3>
-            <p>DPH, kontrolní a souhrnné hlášení, registrace a termíny bez starostí.</p>
+            <h3>3) DPH a související povinnosti</h3>
+            <ul>
+              <li>Registrace k DPH, vedení záznamní povinnosti</li>
+              <li>Daňová přiznání k DPH (měs./čtvrtl.)</li>
+              <li>Kontrolní a souhrnné hlášení, OSS/IOSS (pokud dává smysl)</li>
+            </ul>
           </article>
           <article class="card note" data-animate>
-            <h3>Poradenství</h3>
-            <p>Osobní konzultace, doporučení a kontrola nastavení procesů.</p>
+            <h3>4) Evidence majetku a skladů</h3>
+            <ul>
+              <li>Karty majetku, odpisové plány</li>
+              <li>Inventury a převody</li>
+              <li>Leasingy a jejich účtování</li>
+            </ul>
+          </article>
+          <article class="card note" data-animate>
+            <h3>5) Mzdy a dohody (volitelné)</h3>
+            <ul>
+              <li>Výpočet mezd, DPP/DPČ, odvody</li>
+              <li>Roční zúčtování daně zaměstnanců</li>
+              <li>Hlášení na úřady (ZP, OSSZ, FÚ)</li>
+            </ul>
+          </article>
+          <article class="card note" data-animate>
+            <h3>6) Přiznání a roční závěrky</h3>
+            <ul>
+              <li>DPFO/DPPO, silniční, majetkové daně</li>
+              <li>Závěrkové operace, uzávěrka období</li>
+              <li>Spolupráce s auditorem (pokud je potřeba)</li>
+            </ul>
+          </article>
+          <article class="card note" data-animate>
+            <h3>7) Zastupování na úřadech</h3>
+            <ul>
+              <li>Plné moci a komunikace s FÚ, OSSZ, ZP</li>
+              <li>Reakce na výzvy a žádosti o součinnost</li>
+              <li>Odvolání a podání vysvětlení</li>
+            </ul>
+          </article>
+          <article class="card note" data-animate>
+            <h3>8) Digitalizace a automatizace</h3>
+            <ul>
+              <li>Nastavení předávání dokladů (Drive, e‑mail, appky)</li>
+              <li>Šablony, pojmenovávání, párování plateb</li>
+              <li>Doporučení nástrojů (fakturační, sklady, e‑shop)</li>
+            </ul>
+          </article>
+          <article class="card note" data-animate>
+            <h3>9) Poradenství & kontroling</h3>
+            <ul>
+              <li>Průběžné konzultace a daňová optimalizace</li>
+              <li>Cash‑flow, plánování záloh a rezerv</li>
+              <li>Jednorázové posudky a druhé oči</li>
+            </ul>
           </article>
         </div>
       </div>
       <img class="divider" src="assets/divider-dash.svg" alt="" aria-hidden="true"/>
     </section>
 
-    <!-- PŘÍNOSY -->
-    <section id="prinosy" class="section section--cream">
-      <img class="doodle doodle--percent" src="assets/doodle-percent.svg" alt="" aria-hidden="true"/>
-      <img class="doodle doodle--paperclip" src="assets/doodle-paperclip.svg" alt="" aria-hidden="true"/>
-      <div class="container benefits">
-        <h2 data-animate>Proč Účto v kapse</h2>
-        <ul class="benefit-list">
-          <li data-animate><img src="assets/doodle-star.svg" alt="" width="20" height="20"/> Vyřídíme povinnosti včas — hlídáme termíny za vás.</li>
-          <li data-animate><img src="assets/doodle-star.svg" alt="" width="20" height="20"/> Srozumitelné výstupy — víte, jak si stojíte.</li>
-          <li data-animate><img src="assets/doodle-star.svg" alt="" width="20" height="20"/> On‑line spolupráce — bez zbytečného papírování.</li>
-          <li data-animate><img src="assets/doodle-star.svg" alt="" width="20" height="20"/> Osobní přístup — poradíme, když si nejste jistí.</li>
-        </ul>
+    <!-- BALÍČKY / CENÍK (více obsahu) -->
+    <section id="balicky" class="section">
+      <img class="doodle doodle--crown" src="assets/doodle-crown.svg" alt="" aria-hidden="true"/>
+      <div class="container">
+        <h2 data-animate>Balíčky a orientační ceny</h2>
+        <div class="grid grid--3 pricing">
+          <div class="price card note" data-animate>
+            <h3>Start (OSVČ bez DPH)</h3>
+            <p class="price__tag">od 1 490 Kč / měs.</p>
+            <ul>
+              <li>Daňová evidence, do ~30 dokladů/měs.</li>
+              <li>Měsíční souhrn + 1 mini konzultace</li>
+              <li>Přiznání k dani z příjmů 1× ročně</li>
+            </ul>
+          </div>
+          <div class="price card note price--hit" data-animate>
+            <div class="ribbon">Nejčastější</div>
+            <h3>Standard (OSVČ s DPH)</h3>
+            <p class="price__tag">od 2 990 Kč / měs.</p>
+            <ul>
+              <li>Účetnictví/DE, DPH (měs./čtvrtl.)</li>
+              <li>Do ~80 dokladů/měs., reporting</li>
+              <li>Konzultace 1× měsíčně</li>
+            </ul>
+          </div>
+          <div class="price card note" data-animate>
+            <h3>Premium (na míru)</h3>
+            <p class="price__tag">podle rozsahu</p>
+            <ul>
+              <li>Větší objemy, mzdy, sklady</li>
+              <li>Kontroling + individuální SLA</li>
+              <li>Pravidelné plánování cash‑flow</li>
+            </ul>
+          </div>
+        </div>
+        <p class="small gray" data-animate>* Ceny jsou orientační; upřesníme je po krátké konzultaci a zohledníme sezónnost, obor a objemy.</p>
       </div>
       <img class="divider" src="assets/divider-dash.svg" alt="" aria-hidden="true"/>
     </section>
 
-    <!-- PROCES -->
-    <section id="prubeh" class="section">
-      <img class="doodle doodle--calc" src="assets/doodle-calc.svg" alt="" aria-hidden="true"/>
-      <img class="doodle doodle--scribble" src="assets/doodle-scribble.svg" alt="" aria-hidden="true"/>
+    <!-- JAK ZAČNEME -->
+    <section id="jak-zacit" class="section section--cream">
+      <img class="doodle doodle--arrowfat" src="assets/doodle-arrow-fat.svg" alt="" aria-hidden="true"/>
       <div class="container">
-        <h2 data-animate>Jak to probíhá</h2>
+        <h2 data-animate>Jak začneme (do 48 h)</h2>
         <ol class="timeline">
-          <li class="step" data-animate><span class="step__num">1</span><strong>Kontakt</strong><p>Napíšete, zavoláte, nebo vyplníte formulář.</p></li>
-          <li class="step" data-animate><span class="step__num">2</span><strong>Konzultace</strong><p>Krátce zmapujeme potřeby a objem dokladů.</p></li>
-          <li class="step" data-animate><span class="step__num">3</span><strong>Nastavení</strong><p>Domluvíme způsob předávání a pravidelné reporty.</p></li>
-          <li class="step" data-animate><span class="step__num">4</span><strong>Průběh</strong><p>Účtujeme, podáváme přiznání a průběžně radíme.</p></li>
+          <li class="step" data-animate><span class="step__num">1</span><strong>Discovery call (15–20 min)</strong><p>Co děláte, jaké máte doklady a termíny.</p></li>
+          <li class="step" data-animate><span class="step__num">2</span><strong>Onboarding a předání</strong><p>Nastavíme předávání (Drive/e‑mail/appka), pošleme šablony.</p></li>
+          <li class="step" data-animate><span class="step__num">3</span><strong>První report</strong><p>Do týdne dostanete základní přehled a doporučení.</p></li>
+          <li class="step" data-animate><span class="step__num">4</span><strong>Průběžná spolupráce</strong><p>Hlídáme termíny, řešíme dotazy, posíláme souhrny.</p></li>
         </ol>
       </div>
       <img class="divider" src="assets/divider-dash.svg" alt="" aria-hidden="true"/>
     </section>
 
-    <!-- CENÍK -->
-    <section id="cenik" class="section section--paper">
-      <img class="doodle doodle--coin coin--left" src="assets/doodle-coin.svg" alt="" aria-hidden="true"/>
-      <img class="doodle doodle--coin coin--right" src="assets/doodle-coin.svg" alt="" aria-hidden="true"/>
+    <!-- CO POTŘEBUJEME OD VÁS -->
+    <section id="co-potrebujem" class="section">
+      <img class="doodle doodle--zigzag" src="assets/doodle-zigzag.svg" alt="" aria-hidden="true"/>
       <div class="container">
-        <h2 data-animate>Ceník</h2>
-        <div class="grid grid--3 pricing">
-          <div class="price card note" data-animate>
-            <h3>Start</h3>
-            <p class="price__tag">od 1 490 Kč / měs.</p>
-            <ul>
-              <li>Základní agenda OSVČ</li>
-              <li>On‑line předávání dokladů</li>
-              <li>Měsíční souhrn</li>
-            </ul>
-            <a href="#kontakt" class="btn btn--ghost">Chci Start</a>
-          </div>
-          <div class="price card note price--hit" data-animate>
-            <div class="ribbon">Nejčastější volba</div>
-            <h3>Standard</h3>
-            <p class="price__tag">od 2 990 Kč / měs.</p>
-            <ul>
-              <li>Větší objem dokladů</li>
-              <li>DPH (měsíčně/čtvrtletně)</li>
-              <li>Průběžné konzultace</li>
-            </ul>
-            <a href="#kontakt" class="btn btn--primary">Chci Standard</a>
-          </div>
-          <div class="price card note" data-animate>
-            <h3>Premium</h3>
-            <p class="price__tag">na míru</p>
-            <ul>
-              <li>Specifické požadavky</li>
-              <li>Pokročilý reporting</li>
-              <li>Prioritní podpora</li>
-            </ul>
-            <a href="#kontakt" class="btn btn--ghost">Mám zájem</a>
-          </div>
-        </div>
-        <p class="small gray" data-animate>* Ceny jsou orientační, přesnou nabídku připravíme po krátké konzultaci.</p>
-      </div>
-      <img class="divider" src="assets/divider-dash.svg" alt="" aria-hidden="true"/>
-    </section>
-
-    <!-- REFERENCE -->
-    <section id="reference" class="section">
-      <img class="doodle doodle--sparkles-2" src="assets/doodle-sparkles.svg" alt="" aria-hidden="true"/>
-      <div class="container">
-        <h2 data-animate>Co říkají klienti</h2>
-        <div class="grid grid--3 testimonials">
-          <figure class="card" data-animate>
-            <blockquote>„Konečně vím, co a kdy odevzdat. Přestala jsem se bát DPH.“</blockquote>
-            <figcaption>Lenka, grafička</figcaption>
-          </figure>
-          <figure class="card" data-animate>
-            <blockquote>„Rychlé odpovědi a žádné zdržování papíry. Za mě super.“</blockquote>
-            <figcaption>Tomáš, programátor</figcaption>
-          </figure>
-          <figure class="card" data-animate>
-            <blockquote>„Srozumitelné reporty a doporučení, která dávají smysl.“</blockquote>
-            <figcaption>Markéta, e‑shop</figcaption>
-          </figure>
+        <h2 data-animate>Co budeme potřebovat</h2>
+        <div class="grid grid--3">
+          <article class="card note" data-animate>
+            <h3>Doklady</h3>
+            <p>Faktury (P/V), bankovní výpisy, pokladní doklady, smlouvy.</p>
+          </article>
+          <article class="card note" data-animate>
+            <h3>Přístupy</h3>
+            <p>Datová schránka, e‑Podání, případně přístupy do aplikací.</p>
+          </article>
+          <article class="card note" data-animate>
+            <h3>Informace</h3>
+            <p>Co fakturujete, kam prodáváte (EU/mimo EU), majetek a závazky.</p>
+          </article>
         </div>
       </div>
       <img class="divider" src="assets/divider-dash.svg" alt="" aria-hidden="true"/>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="section section--cream">
-      <img class="doodle doodle--arrow-2" src="assets/doodle-arrow.svg" alt="" aria-hidden="true"/>
+    <!-- FAQ (rozšířené) -->
+    <section id="faq" class="section section--paper">
       <div class="container">
         <h2 data-animate>Časté dotazy</h2>
         <div class="faq">
           <details data-animate>
-            <summary>Jak předávám doklady?</summary>
-            <div>Nejčastěji on‑line (Drive, e‑mail, datová schránka). Fyzicky je také možné.</div>
+            <summary>Jak poznám, že musím do DPH?</summary>
+            <div>Typicky při obratu nad zákonný limit nebo při specifických činnostech (EU). Probereme vaši situaci a doporučíme postup.</div>
           </details>
           <details data-animate>
-            <summary>Jak se určují ceny?</summary>
-            <div>Podle objemu dokladů a rozsahu agendy. Po krátké konzultaci dostanete přesnou nabídku.</div>
+            <summary>V čem předávat doklady?</summary>
+            <div>Nejraději v dohodnuté struktuře přes Drive/e‑mail. Umíme i aplikace – domluvíme, co vám sedí.</div>
           </details>
           <details data-animate>
-            <summary>Pomůžete mi s registrací k DPH?</summary>
-            <div>Ano, vyřídíme registraci i následné povinnosti (kontrolní a souhrnné hlášení).</div>
+            <summary>Umíte mzdy a dohody?</summary>
+            <div>Ano (volitelně). Pokud je to mimo váš rozsah, doporučíme prověřeného partnera.</div>
+          </details>
+          <details data-animate>
+            <summary>Jaké jsou termíny reportů?</summary>
+            <div>Standardně měsíčně/čtvrtletně. Podle objemu můžeme přizpůsobit.</div>
           </details>
         </div>
       </div>
-      <img class="divider" src="assets/divider-dash.svg" alt="" aria-hidden="true"/>
     </section>
 
-    <!-- CTA závěr -->
-    <section class="section cta">
+    <!-- CTA + Kontakt -->
+    <section id="kontakt" class="section cta">
       <div class="container cta__inner">
-        <h2>Připraveni začít?</h2>
-        <a class="btn btn--primary" href="#kontakt">Domluvit schůzku</a>
+        <h2>Chcete to vzít bez stresu?</h2>
+        <a class="btn btn--primary" href="#form">Domluvit schůzku</a>
       </div>
     </section>
 
-    <!-- Kontakt / formulář -->
-    <section id="kontakt" class="section">
-      <img class="doodle doodle--paperclip-2" src="assets/doodle-paperclip.svg" alt="" aria-hidden="true"/>
+    <section id="form" class="section">
       <div class="container">
-        <h2>Kontakt</h2>
+        <h2>Napište nám</h2>
         <form class="contact" action="#" method="post" onsubmit="return false;">
           <label>Jméno<input required type="text" name="name" placeholder="Vaše jméno"></label>
           <label>E‑mail<input required type="email" name="email" placeholder="vas@email.cz"></label>
-          <label>Zpráva<textarea required name="msg" rows="4" placeholder="S čím vám můžeme pomoci?"></textarea></label>
+          <label>Telefon (volitelné)<input type="tel" name="tel" placeholder="+420 …"></label>
+          <label>Krátce o vás<textarea required name="msg" rows="4" placeholder="S čím vám můžeme pomoci?"></textarea></label>
           <button class="btn btn--primary" type="submit">Odeslat</button>
           <p class="form-ok" role="status" aria-live="polite" hidden>Děkujeme! Ozveme se co nejdřív.</p>
         </form>
@@ -246,7 +282,7 @@
         <h4>Odkazy</h4>
         <ul>
           <li><a href="#sluzby">Služby</a></li>
-          <li><a href="#cenik">Ceník</a></li>
+          <li><a href="#balicky">Balíčky</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>

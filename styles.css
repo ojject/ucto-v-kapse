@@ -1,4 +1,4 @@
-/* Paper Play – Prezentace s více doodly */
+/* Paper Play – Kid‑core (víc doodles) */
 :root{
   --ink:#352E2C; --gray:#6B625E; --cream:#FFF2D8; --paper:#F6EFE7; --white:#FFFFFF;
   --mint:#41C48F; --yellow:#FFC94B; --peach:#FFC8A2; --sky:#B7D6EF;
@@ -6,6 +6,7 @@
   --font-heading:"Rubik",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
   --font-text:"Signika",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
   --font-hand:"Caveat","Patrick Hand",cursive;
+  --font-hand2:"Patrick Hand","Caveat",cursive;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -23,8 +24,10 @@ img{max-width:100%;display:block}
 .btn{display:inline-block;padding:14px 22px;border-radius:999px;font-weight:800;text-decoration:none;transition:.2s}
 .btn--small{padding:10px 16px}
 .btn--primary{background:var(--mint);color:#fff}
-.btn--ghost{background:#fff;border:2px solid var(--ink);color:#var(--ink)}
+.btn--ghost{background:#fff;border:2px solid var(--ink);color:var(--ink)}
 .btn:hover{transform:translateY(-1px) scale(1.01)}
+
+.toggle-doodles{margin-left:12px;border:2px dashed var(--ink);background:#FFF7E9;border-radius:10px;padding:10px 14px;font:700 14px/1 var(--font-hand2);cursor:pointer}
 
 .section{padding:80px 0; position:relative}
 .section--cream{background:#FBF2E4}
@@ -34,13 +37,14 @@ h1,h2,h3,h4{font-family:var(--font-heading);color:var(--ink);letter-spacing:.2px
 h1{font-weight:700;font-size:clamp(30px,4.5vw,52px)}
 h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
 .em-hand{font-family:var(--font-hand);font-weight:700}
+.hero-slogan{font-family:var(--font-hand2);font-size:clamp(18px,2.2vw,26px)}
 .lead{color:var(--gray);max-width:760px}
 .marker{background:linear-gradient(180deg,transparent 60%, var(--yellow) 60%);padding:0 .2em}
 
 .paper-bg{background-image: radial-gradient(800px 400px at 10% -10%, #FFF9EF 20%, transparent 60%), radial-gradient(600px 300px at 90% 0%, #FFF7EA 20%, transparent 60%); background-repeat:no-repeat}
 
 .hero-grid{display:grid;grid-template-columns:1.1fr 1.2fr;gap:28px;align-items:center}
-.hero .sticky.big{max-width:540px}
+.hero .sticky.big{max-width:560px}
 .hero-logo{font-size:clamp(32px,4.4vw,56px); margin-top:12px}
 .hero-title{font-size:clamp(28px,3.6vw,44px)}
 .hero-sub{font-size:clamp(18px,2.2vw,26px);margin:6px 0 12px}
@@ -60,7 +64,7 @@ h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
 
 /* Timeline */
 .timeline{display:grid;gap:20px;grid-template-columns:repeat(4,1fr);list-style:none;padding:0;margin:24px 0}
-.step{background:#fff;border:1px dashed #E2D9CF;padding:18px;border-radius:16px;position:relative;box-shadow:var(--shadow-soft)}
+.step{background:#fff;border:2px dashed #E2D9CF;padding:18px;border-radius:16px;position:relative;box-shadow:var(--shadow-soft)}
 .step__num{position:absolute;left:-10px;top:-10px;background:var(--yellow);border-radius:50%;width:30px;height:30px;display:grid;place-items:center;font-weight:800;box-shadow:var(--shadow-soft)}
 
 /* Pricing */
@@ -70,49 +74,26 @@ h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
 .ribbon{position:absolute;top:-10px;right:12px;background:#41C48F;color:#fff;padding:6px 10px;border-radius:10px;font:800 12px/1 var(--font-heading)}
 .small.gray{color:#6b6b6b;margin-top:12px}
 
-/* Testimonials */
-.testimonials figure{padding:20px;border-radius:16px;background:#fff;box-shadow:var(--shadow-soft)}
-.testimonials blockquote{margin:0 0 8px;font-style:italic}
-.testimonials figcaption{color:#6b6b6b}
-
-/* CTA */
-.cta{background:#0F2744;color:#fff;text-align:center}
-.cta h2{color:#fff;margin-bottom:12px}
-
-/* Contact */
-.contact{display:grid;gap:12px;max-width:640px}
-.contact label{display:grid;gap:6px;font-weight:700}
-.contact input,.contact textarea{border:1px solid #e1e1e1;border-radius:12px;padding:12px;font:inherit}
-.form-ok{margin-top:8px;color:#166534}
-
-/* Footer */
-.site-footer{background:#0F2744;color:#D8E2EF}
-.footer-grid{display:grid;gap:24px;grid-template-columns:2fr 1fr 1fr}
-.brand--footer{display:flex;align-items:center;gap:10px;font:800 18px/1 var(--font-heading);color:#fff}
-.copy{border-top:1px solid rgba(255,255,255,.1);padding:14px 0;text-align:center;margin-top:12px}
-
 /* Doodles */
-.doodle{position:absolute;opacity:.25;pointer-events:none;filter:saturate(.9)}
-.hero .doodle--sparkles{top:14px; left:8%; width:120px; animation:float 10s ease-in-out infinite}
-.hero .doodle--arrow{top:40px; right:6%; width:90px; transform:rotate(8deg); animation:float 12s ease-in-out infinite}
-#sluzby .doodle--coin{left:-24px; top:10%; width:96px; animation:tilt 8s ease-in-out infinite}
-#sluzby .doodle--star{right:-18px; bottom:8%; width:82px; animation:float 11s ease-in-out infinite}
-#prinosy .doodle--percent{left:-30px; bottom:10%; width:88px; animation:tilt 7s ease-in-out infinite}
-#prinosy .doodle--paperclip{right:-24px; top:12%; width:72px; transform:rotate(-12deg)}
-#prubeh .doodle--calc{left:-22px; top:16%; width:78px}
-#prubeh .doodle--scribble{right:-26px; bottom:12%; width:120px; opacity:.3}
-#reference .doodle--sparkles-2{right:6%; top:10%; width:120px}
-#faq .doodle--arrow-2{left:5%; bottom:5%; width:90px; transform:rotate(-12deg)}
-#kontakt .doodle--paperclip-2{right:6%; top:8%; width:72px; transform:rotate(10deg)}
+.doodle{position:absolute;opacity:.3;pointer-events:none;filter:saturate(1)}
+/* Kid-core MORE */
+.kidcore-more .doodle{display:block}
+.kidcore-less .doodle{display:none}
 
-.divider{display:block; width:100%; max-width:1100px; margin:28px auto 0; opacity:.45}
+.hero .doodle--rainbow{top:6px; right:6%; width:240px; animation:float 10s ease-in-out infinite}
+.hero .doodle--starfat{left:4%; top:18%; width:120px; transform:rotate(-8deg); animation:tilt 8s ease-in-out infinite}
+#sluzby .doodle--heart{left:-20px; top:10%; width:110px; animation:float 12s ease-in-out infinite}
+#sluzby .doodle--smile{right:-16px; bottom:12%; width:100px}
+#balicky .doodle--crown{right:-18px; top:12%; width:120px}
+#jak-zacit .doodle--arrowfat{left:4%; top:8%; width:160px}
+#co-potrebujem .doodle--zigzag{right:-28px; bottom:6%; width:220px; opacity:.25}
 
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-@keyframes tilt{0%,100%{transform:rotate(0deg)}50%{transform:rotate(6deg)}}
+.divider{display:block; width:100%; max-width:1100px; margin:28px auto 0; opacity:.5}
 
-@media (prefers-reduced-motion: reduce){
-  .doodle{animation:none}
-}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes tilt{0%,100%{transform:rotate(0deg)}50%{transform:rotate(10deg)}}
+
+@media (prefers-reduced-motion: reduce){ .doodle{animation:none} }
 
 /* Appear animation */
 [data-animate]{opacity:0;transform:translateY(12px);transition:.5s ease}
@@ -120,8 +101,4 @@ h2{font-weight:700;font-size:clamp(24px,3.3vw,36px)}
 
 /* Responsive */
 @media(max-width:1080px){.grid--4{grid-template-columns:repeat(2,1fr)}.grid--3{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){
-  .grid--4,.grid--3{grid-template-columns:1fr}
-  .main-nav{gap:12px}
-  .doodle{display:none} /* méně rušivé na malých displejích */
-}
+@media(max-width:640px){.grid--4,.grid--3{grid-template-columns:1fr}.main-nav{gap:12px}.toggle-doodles{display:none}}

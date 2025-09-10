@@ -1,0 +1,7 @@
+
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 120'>
+    <path d='M20 100 q80 -100 160 0' stroke='#FFC8A2' stroke-width='12' fill='none' stroke-linecap='round'/>
+    <path d='M30 100 q70 -90 140 0' stroke='#FFC94B' stroke-width='12' fill='none' stroke-linecap='round'/>
+    <path d='M40 100 q60 -80 120 0' stroke='#41C48F' stroke-width='12' fill='none' stroke-linecap='round'/>
+    <path d='M50 100 q50 -70 100 0' stroke='#B7D6EF' stroke-width='12' fill='none' stroke-linecap='round'/>
+  </svg>

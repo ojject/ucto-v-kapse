@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 80" aria-hidden="true">
- <rect x="10" y="20" width="100" height="40" rx="8" fill="#E9EEF6"/>
- <rect x="130" y="20" width="100" height="40" rx="8" fill="#E9F6EF"/>
- <rect x="250" y="20" width="100" height="40" rx="8" fill="#FFF1E6"/>
- <rect x="370" y="20" width="100" height="40" rx="8" fill="#F4EFFF"/>
- <rect x="490" y="20" width="100" height="40" rx="8" fill="#FFF8D9"/>
-</svg>
+
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 80'>
+      <rect x='10' y='20' width='100' height='40' rx='8' fill='#E9EEF6'/>
+      <rect x='130' y='20' width='100' height='40' rx='8' fill='#E9F6EF'/>
+      <rect x='250' y='20' width='100' height='40' rx='8' fill='#FFF1E6'/>
+      <rect x='370' y='20' width='100' height='40' rx='8' fill='#F4EFFF'/>
+      <rect x='490' y='20' width='100' height='40' rx='8' fill='#FFF8D9'/>
+    </svg>
+    
