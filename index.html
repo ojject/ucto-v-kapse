@@ -1,258 +1,38 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Účto v kapse — Prezentace pro klienta</title>
-  <meta name="description" content="Účto v kapse: účetnictví, daně a DPH pro OSVČ. Hravé Paper Play UI, připravené k prezentaci klientovi.">
-  <meta name="theme-color" content="#41C48F">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Varianta B: Rubik (nadpisy) / Signika (texty) / Caveat (akcenty) s latin-ext -->
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Signika:wght@400;600&family=Caveat:wght@700&display=swap&subset=latin-ext" rel="stylesheet">
-  <link rel="icon" href="assets/logo_uvk.svg" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="print.css" media="print" />
-  <meta property="og:title" content="Účto v kapse — Prezentace" />
-  <meta property="og:description" content="Účetnictví a daně pro živnostníky bez stresu. Paper Play prototyp připravený na ukázku." />
-  <meta property="og:image" content="assets/logo_uvk.svg" />
+  <meta charset="UTF-8">
+  <title>Účto v kapse – Paper Play Doodles</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="paper-bg">
-  <a class="skip" href="#obsah">Přeskočit na obsah</a>
-
-  <!-- Header (single) -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Účto v kapse — domů">
-        <img src="assets/logo_uvk.svg" alt="UVK" width="36" height="36"/>
-        <span>Účto v kapse</span>
-      </a>
-      <nav class="main-nav">
-        <a href="#sluzby">Služby</a>
-        <a href="#prinosy">Přínosy</a>
-        <a href="#prubeh">Proces</a>
-        <a href="#cenik">Ceník</a>
-        <a href="#reference">Reference</a>
-        <a href="#faq">FAQ</a>
-        <a href="#kontakt" class="btn btn--primary btn--small">Schůzka zdarma</a>
-      </nav>
+  <header class="hero">
+    <div class="sticky">
+      <div class="tape tape--tl"></div>
+      <div class="tape tape--tr"></div>
+      <h1 class="hero-title">Účto v kapse</h1>
+      <p class="hero-sub em-hand marker">bez stresu</p>
     </div>
+    <img src="assets/arrow.svg" class="doodle doodle--arrow" alt="Arrow Doodle">
   </header>
-
-  <main id="obsah">
-    <!-- HERO -->
-    <section id="top" class="section hero">
-      <div class="container hero-grid">
-        <div class="sticky big" data-animate>
-          <div class="tape tape--tl"></div>
-          <div class="tape tape--tr"></div>
-          <img class="brain" src="assets/brain.svg" alt="Maskot mozek se žárovkou"/>
-          <h1 class="hero-logo">Účto v kapse</h1>
-        </div>
-        <div>
-          <h1 class="hero-title" data-animate>Účetnictví a daně pro živnostníky (OSVČ)</h1>
-          <p class="hero-sub em-hand marker" data-animate>bez stresu</p>
-          <p class="lead" data-animate>
-            Od prvního dokladu po přiznání — srozumitelně, online a včas. 
-            Jasné ceny, přehledný reporting a lidská komunikace.
-          </p>
-          <p class="cta-row" data-animate>
-            <a class="btn btn--primary" href="#kontakt">Zažádat o schůzku</a>
-            <a class="btn btn--ghost" href="#cenik">Podívat se na ceny</a>
-          </p>
-          <div class="clients" data-animate>
-            <img src="assets/clients.svg" alt="Loga klientů (placeholder)"/>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SLUŽBY -->
-    <section id="sluzby" class="section">
-      <div class="container">
-        <h2 data-animate>Co pro vás uděláme</h2>
-        <div class="grid grid--4">
-          <article class="card note" data-animate>
-            <h3>Vedení účetnictví</h3>
-            <p>Kompletní zpracování dokladů, účtování, měsíční/čtvrtletní reporty.</p>
-          </article>
-          <article class="card note" data-animate>
-            <h3>Daňová evidence</h3>
-            <p>Přehledné vedení příjmů a výdajů pro OSVČ. On‑line předávání dokladů.</p>
-          </article>
-          <article class="card note" data-animate>
-            <h3>DPH & přiznání</h3>
-            <p>DPH, kontrolní a souhrnné hlášení, registrace a termíny bez starostí.</p>
-          </article>
-          <article class="card note" data-animate>
-            <h3>Poradenství</h3>
-            <p>Osobní konzultace, doporučení a kontrola nastavení procesů.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PŘÍNOSY -->
-    <section id="prinosy" class="section section--cream">
-      <div class="container benefits">
-        <h2 data-animate>Proč Účto v kapse</h2>
-        <ul class="benefit-list">
-          <li data-animate><img src="assets/check.svg" alt="" width="20" height="20"/> Vyřídíme povinnosti včas — hlídáme termíny za vás.</li>
-          <li data-animate><img src="assets/check.svg" alt="" width="20" height="20"/> Srozumitelné výstupy — víte, jak si stojíte.</li>
-          <li data-animate><img src="assets/check.svg" alt="" width="20" height="20"/> On‑line spolupráce — bez zbytečného papírování.</li>
-          <li data-animate><img src="assets/check.svg" alt="" width="20" height="20"/> Osobní přístup — poradíme, když si nejste jistí.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- PROCES -->
-    <section id="prubeh" class="section">
-      <div class="container">
-        <h2 data-animate>Jak to probíhá</h2>
-        <ol class="timeline">
-          <li class="step" data-animate><span class="step__num">1</span><strong>Kontakt</strong><p>Napíšete, zavoláte, nebo vyplníte formulář.</p></li>
-          <li class="step" data-animate><span class="step__num">2</span><strong>Konzultace</strong><p>Krátce zmapujeme potřeby a objem dokladů.</p></li>
-          <li class="step" data-animate><span class="step__num">3</span><strong>Nastavení</strong><p>Domluvíme způsob předávání a pravidelné reporty.</p></li>
-          <li class="step" data-animate><span class="step__num">4</span><strong>Průběh</strong><p>Účtujeme, podáváme přiznání a průběžně radíme.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- CENÍK (prezentační) -->
-    <section id="cenik" class="section section--paper">
-      <div class="container">
-        <h2 data-animate>Ceník</h2>
-        <div class="grid grid--3 pricing">
-          <div class="price card note" data-animate>
-            <h3>Start</h3>
-            <p class="price__tag">od 1 490 Kč / měs.</p>
-            <ul>
-              <li>Základní agenda OSVČ</li>
-              <li>On‑line předávání dokladů</li>
-              <li>Měsíční souhrn</li>
-            </ul>
-            <a href="#kontakt" class="btn btn--ghost">Chci Start</a>
-          </div>
-          <div class="price card note price--hit" data-animate>
-            <div class="ribbon">Nejčastější volba</div>
-            <h3>Standard</h3>
-            <p class="price__tag">od 2 990 Kč / měs.</p>
-            <ul>
-              <li>Větší objem dokladů</li>
-              <li>DPH (měsíčně/čtvrtletně)</li>
-              <li>Průběžné konzultace</li>
-            </ul>
-            <a href="#kontakt" class="btn btn--primary">Chci Standard</a>
-          </div>
-          <div class="price card note" data-animate>
-            <h3>Premium</h3>
-            <p class="price__tag">na míru</p>
-            <ul>
-              <li>Specifické požadavky</li>
-              <li>Pokročilý reporting</li>
-              <li>Prioritní podpora</li>
-            </ul>
-            <a href="#kontakt" class="btn btn--ghost">Mám zájem</a>
-          </div>
-        </div>
-        <p class="small gray" data-animate>* Ceny jsou orientační, přesnou nabídku připravíme po krátké konzultaci.</p>
-      </div>
-    </section>
-
-    <!-- REFERENCE -->
-    <section id="reference" class="section">
-      <div class="container">
-        <h2 data-animate>Co říkají klienti</h2>
-        <div class="grid grid--3 testimonials">
-          <figure class="card" data-animate>
-            <blockquote>„Konečně vím, co a kdy odevzdat. Přestala jsem se bát DPH.“</blockquote>
-            <figcaption>Lenka, grafička</figcaption>
-          </figure>
-          <figure class="card" data-animate>
-            <blockquote>„Rychlé odpovědi a žádné zdržování papíry. Za mě super.“</blockquote>
-            <figcaption>Tomáš, programátor</figcaption>
-          </figure>
-          <figure class="card" data-animate>
-            <blockquote>„Srozumitelné reporty a doporučení, která dávají smysl.“</blockquote>
-            <figcaption>Markéta, e‑shop</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section section--cream">
-      <div class="container">
-        <h2 data-animate>Časté dotazy</h2>
-        <div class="faq">
-          <details data-animate>
-            <summary>Jak předávám doklady?</summary>
-            <div>Nejčastěji on‑line (Drive, e‑mail, datová schránka). Fyzicky je také možné.</div>
-          </details>
-          <details data-animate>
-            <summary>Jak se určují ceny?</summary>
-            <div>Podle objemu dokladů a rozsahu agendy. Po krátké konzultaci dostanete přesnou nabídku.</div>
-          </details>
-          <details data-animate>
-            <summary>Pomůžete mi s registrací k DPH?</summary>
-            <div>Ano, vyřídíme registraci i následné povinnosti (kontrolní a souhrnné hlášení).</div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA závěr -->
-    <section class="section cta">
-      <div class="container cta__inner">
-        <h2>Připraveni začít?</h2>
-        <a class="btn btn--primary" href="#kontakt">Domluvit schůzku</a>
-      </div>
-    </section>
-
-    <!-- Kontakt / formulář -->
-    <section id="kontakt" class="section">
-      <div class="container">
-        <h2>Kontakt</h2>
-        <form class="contact" action="#" method="post" onsubmit="return false;">
-          <label>Jméno<input required type="text" name="name" placeholder="Vaše jméno"></label>
-          <label>E‑mail<input required type="email" name="email" placeholder="vas@email.cz"></label>
-          <label>Zpráva<textarea required name="msg" rows="4" placeholder="S čím vám můžeme pomoci?"></textarea></label>
-          <button class="btn btn--primary" type="submit">Odeslat</button>
-          <p class="form-ok" role="status" aria-live="polite" hidden>Děkujeme! Ozveme se co nejdřív.</p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="brand brand--footer"><img src="assets/logo_uvk.svg" width="32" height="32" alt=""/><span>Účto v kapse</span></div>
-      <div>
-        <h4>Odkazy</h4>
-        <ul>
-          <li><a href="#sluzby">Služby</a></li>
-          <li><a href="#cenik">Ceník</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Kontakt</h4>
-        <ul>
-          <li><a href="mailto:info@uctovkapse.cz">info@uctovkapse.cz</a></li>
-          <li><a href="tel:+420123456789">+420 123 456 789</a></li>
-        </ul>
-      </div>
+  <section class="services">
+    <h2>Služby</h2>
+    <div class="sticky note">
+      <div class="tape tape--tl"></div>
+      <h3>Účetnictví</h3>
+      <p>Kompletní zpracování dokladů a reporting.</p>
     </div>
-    <div class="container copy">© 2025 Účto v kapse</div>
-  </footer>
-
-  <!-- Presenter helpers -->
-  <div class="presenter-toolbar" hidden id="presenterBar">
-    <button id="prevSec">◀︎</button>
-    <span>Režim prezentace</span>
-    <button id="nextSec">▶︎</button>
-  </div>
-
-  <script src="script.js"></script>
+    <img src="assets/star.svg" class="doodle doodle--star" alt="Star Doodle">
+  </section>
+  <section class="tips">
+    <h2>Tipy a návody</h2>
+    <div class="sticky note">
+      <div class="tape tape--tr"></div>
+      <h3>Daňová evidence</h3>
+      <p>Jak správně vést příjmy a výdaje.</p>
+    </div>
+    <img src="assets/scribble.svg" class="doodle doodle--scribble" alt="Scribble Doodle">
+  </section>
 </body>
 </html>
